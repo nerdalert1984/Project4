@@ -6,11 +6,20 @@
 // String Manipulation (Changing Separators)
 var abc = "a,b,c" + "," + "/"
 
-var separator = function ()
-	{
-	outputAbc = abc.charAt(0) + abc.charAt(6) + abc.charAt(2) + abc.charAt(6) + abc.charAt(4);
-	console.log(outputAbc);
-	return outputAbc
-	};
+var separator = function () {
+		outputAbc = abc.charAt(0) + abc.charAt(6) + abc.charAt(2) + abc.charAt(6) + abc.charAt(4);
+		console.log(outputAbc);
+		return outputAbc
+};
 
 var showOutput = separator()
+
+// Numbers to Dollars
+
+var makeDollar = function (number) {
+	makeMoney = "$" + number.toFixed(2);
+	return makeMoney
+};
+
+var thisIsMoney = makeDollar(158);
+console.log(thisIsMoney);
