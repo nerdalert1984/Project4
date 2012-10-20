@@ -31,18 +31,15 @@ var makeProper = "make me a proper title"
 
 var	splitProper = makeProper.split(" ");
 	
-	makeProper = makeProper.substring(0,1).toUpperCase() + makeProper.substring(1);
-
 var getProper = function (i) {
-		for (var i = 0; i < splitProper.length; i++) {
-		splitProp = splitProper[i].substring(0,1).toUpperCase() + splitProper[i].substring(1);
+	for (var i = 0; i < splitProper.length; i++) {
+	splitProp = splitProper[i].substring(0,1).toUpperCase() + splitProper[i].substring(1);
 	};
 return splitProp;
 };
 	
 var thisProp = getProper(0)
 
-console.log(makeProper)
 console.log(thisProp)
 
 // Numbers to Dollars
@@ -54,3 +51,20 @@ var makeDollar = function (number) {
 
 var thisIsMoney = makeDollar(158);
 console.log(thisIsMoney);
+
+
+// String Boolean: Am I a Website?
+
+var isSite = function (maybeSite) {
+	if ( maybeSite.substring(0,5) == "http:" || maybeSite.substring(0,6) == "https:") {
+	siteStatus = " is a website."}
+	else { siteStatus = " is not a website."};
+	confirmStatus = maybeSite + siteStatus;
+	return confirmStatus;
+	};
+	
+isItASite = isSite("http://www.facebook.com")
+console.log(isItASite);
+
+notASite = isSite("Adventure Time is a great show")
+console.log(notASite);
