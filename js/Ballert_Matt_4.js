@@ -3,7 +3,7 @@
 // Project 4
 // Preparing For a New Journey In Coding
 
-var myLibrary = {
+
 
 	// String Manipulation (Changing Separators)
 	var abc = "a,b,c" + "," + "/"
@@ -82,4 +82,3 @@ var myLibrary = {
 	var numArr = minArr(myArray);
 	console.log(numArr)
 
-};
